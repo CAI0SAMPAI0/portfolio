@@ -37,6 +37,30 @@ ScrollReveal().reveal('.sobre', {
     distance: '20%'
 
 });
+ScrollReveal().reveal('.portfolio', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+
+});
+ScrollReveal().reveal('.formulario, footer', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+
+});
+ScrollReveal().reveal('.projeto-card, .esp-box', {
+    delay: 200,
+    distance: '50px',
+    origin: 'bottom',
+    duration: 1000
+});
+
+ScrollReveal().reveal('.txt_topo_site, .titulo', {
+    delay: 100,
+    origin: 'left',
+    distance: '30px'
+});
 
 // form funcionar
 

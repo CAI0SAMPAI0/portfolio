@@ -16,17 +16,17 @@
     <!--fim bood-->
     <title>Caio Sampaio</title>
     <link href="style/style.css" rel="stylesheet">
-    <link rel="ico" type="image/svg+xml"  href="images/logo.svg">
+    <link rel="ico" type="image/svg+xml" href="images/logo.svg">
     <script src="js/portfolio_menu.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="icon" type="image.ico" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
-
     <header>
         <div class="interface">
             <div class="logo">
@@ -89,9 +89,10 @@
                         </div>
                     </div><!--txt-topo-site-->
                     <div class="img-topo-site">
-                        <img src="images/logo.jpg"></div><!--img-topo-site-->
-                    </div><!--flex-->
-                </div><!--interface-->
+                        <img src="images/logo.jpg">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
         </section><!--topo do site-->
         <section class="especialidades" id="e">
             <div class="interface">
@@ -105,7 +106,7 @@
                     <div class="esp-box">
                         <i class="bi bi-filetype-js"></i>
                         <h3>JAVASCRIPT</h3>
-                        <p>JS.</p>
+                        <p>Desenvolvimento de interfaces dinâmicas e interativas, focadas na experiência do usuário.</p>
                     </div>
                     <div class="esp-box">
                         <i class="bi bi-filetype-html"></i>
@@ -125,7 +126,12 @@
                     </div>
                     <div class="txt-sobre" id="s">
                         <h2>MUITO PRAZER, <span>SOU CAIO SAMPAIO.</span></h2>
-                        <p>Minha jornada com a tecnologia começou na infância e, o que era curiosidade, transformou-se em uma carreira como Desenvolvedor Full Stack. Hoje, uno a inteligência do Python à versatilidade do JavaScript para criar soluções completas. Meu diferencial? Não entrego apenas código; entrego código limpo, organizado e interfaces com foco total em UI/UX. Seja para automatizar processos complexos ou criar experiências web memoráveis, meu objetivo é transformar sua ideia em um produto digital de alto impacto..</p>
+                        <p>Minha jornada com a tecnologia começou na infância e, o que era curiosidade, transformou-se
+                            em uma carreira como Desenvolvedor Full Stack. Hoje, uno a inteligência do Python à
+                            versatilidade do JavaScript para criar soluções completas. Meu diferencial? Não entrego
+                            apenas código; entrego código limpo, organizado e interfaces com foco total em UI/UX. Seja
+                            para automatizar processos complexos ou criar experiências web memoráveis, meu objetivo é
+                            transformar sua ideia em um produto digital de alto impacto..</p>
                         <!--<p></p>-->
                         <div class="btn-social">
                             <a href="https://www.instagram.com/cai0_07/" target="_blank"><button><i
@@ -142,19 +148,73 @@
         <section class="portfolio" id="p">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/std_1.jpg);">
-                        <div class="overlay1">Automação para WhatsApp</div>
+                    <div class="projeto-card">
+                        <div class="browser-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="projeto-img">
+                            <img src="images/std_1.jpg" alt="Automação para WhatsApp">
+                        </div>
+                        <div class="projeto-txt">
+                            <h3>Automação WhatsApp</h3>
+                            <p>Sistema inteligente em Python para envio de notificações e gestão de mensagens em massa.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Playwright</span>
+                            </div>
+                            <a href="https://github.com/CAI0SAMPAI0/playwright" target="_blank" class="btn-ver-mais">Ver Código</a>
+                        </div>
                     </div>
-                    <div class="img-port2" style="background-image: url(images/std2.jpg);">
-                        <div class="overlay">Gerador de senhas</div>
+
+                    <div class="projeto-card">
+                        <div class="browser-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="projeto-img">
+                            <img src="images/std2.jpg" alt="Gerador de Senhas">
+                        </div>
+                        <div class="projeto-txt">
+                            <h3>Gerador de Senhas</h3>
+                            <p>Aplicação focada em segurança cibernética que gera chaves aleatórias e criptografadas.
+                            </p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Segurança</span>
+                            </div>
+                            <a href="https://github.com/CAI0SAMPAI0/Pass_generator" target="_blank" class="btn-ver-mais">Ver Código</a>
+                        </div>
                     </div>
-                    <div class="img-port" style="background-image: url(images/std2.jpg);">
-                        <div class="overlay">Criação de sites</div>
+
+                    <div class="projeto-card">
+                        <div class="browser-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="projeto-img">
+                            <img src="images/site.png" alt="Criação de Sites">
+                        </div>
+                        <div class="projeto-txt">
+                            <h3>Criação de Sites</h3>
+                            <p>Desenvolvimento de Landing Pages modernas com foco em conversão e design responsivo.</p>
+                            <div class="tags">
+                                <span>HTML/CSS</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <a href="https://github.com/CAI0SAMPAI0/portfolio" target="_blank" class="btn-ver-mais">Ver Projeto</a>
+                        </div>
                     </div>
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--portfolio-->
+
+                </div>
+            </div>
+        </section>
 
         <section class="formulario" id="c1">
             <div class="interface">
