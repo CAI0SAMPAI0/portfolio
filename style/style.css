@@ -667,6 +667,102 @@ footer .line-footer p a:hover {
 }
 
 /* =============================================
+   PORTFÓLIO — CATEGORIAS
+   (adicionar ao final do style.css)
+   ============================================= */
+
+.categoria-bloco {
+    margin-top: 60px;
+}
+
+.categoria-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.categoria-header i {
+    font-size: 22px;
+    color: var(--accent);
+}
+
+.categoria-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.categoria-linha {
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: var(--footer-border);
+}
+
+.cards-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cards-grid .projeto-card {
+    width: 340px;
+}
+
+/* Link GitHub no final */
+.github-link {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--footer-border);
+}
+
+.github-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid var(--footer-border);
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.github-link a i {
+    font-size: 20px;
+}
+
+.github-link a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(249, 115, 22, 0.2);
+}
+
+/* Responsivo categorias */
+@media screen and (max-width: 1024px) {
+    .cards-grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .cards-grid .projeto-card {
+        width: 100%;
+    }
+
+    .categoria-header h3 {
+        font-size: 15px;
+    }
+}
+
+/* =============================================
    RESPONSIVO
    ============================================= */
 @media screen and (max-width: 1024px) {
