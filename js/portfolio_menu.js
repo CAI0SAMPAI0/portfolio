@@ -10,47 +10,6 @@ btnMenu.addEventListener('click', () => menu.classList.add('abrir_menu'));
 menu.addEventListener('click', () => menu.classList.remove('abrir_menu'));
 overlay.addEventListener('click', () => menu.classList.remove('abrir_menu'));
 
-// =============================================
-// DARK MODE
-// =============================================
-
-const html = document.documentElement;
-
-function getTheme() {
-    return html.getAttribute('data-theme') || 'light';
-}
-
-function setTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    updateToggleIcons(theme);
-}
-
-function updateToggleIcons(theme) {
-    document.querySelectorAll('.dark-toggle-icon').forEach(icon => {
-        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
-    });
-}
-
-function toggleTheme() {
-    setTheme(getTheme() === 'dark' ? 'light' : 'dark');
-}
-
-updateToggleIcons(getTheme());
-
-document.getElementById('dark-toggle-desktop').addEventListener('click', toggleTheme);
-document.getElementById('dark-toggle-mobile').addEventListener('click', toggleTheme);
-
-[document.getElementById('dark-toggle-desktop'), document.getElementById('dark-toggle-mobile')]
-    .forEach(el => {
-        el.addEventListener('keydown', e => {
-            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleTheme(); }
-        });
-    });
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light');
-});
 
 // =============================================
 // CURSOR PERSONALIZADO (item 2)
