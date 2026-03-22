@@ -577,7 +577,175 @@ footer .line-footer p a {
     footer .line-footer {
         text-align: center;
     }
+}
 
+.whatsapp-float .wpp-tooltip {
+    position: absolute;
+    right: 70px;
+    background: #25D366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
 
+.whatsapp-float .wpp-tooltip::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #25D366;
+}
 
+.whatsapp-float a:hover .wpp-tooltip {
+    opacity: 1;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float img {
+    width: 34px;
+    height: 34px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
+.pulsar{
+    animation: pulse-animation 2s infinite;
+}
+
+/* animação de pulsar */
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =============================================
+   RESPONSIVO
+   ============================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo_do_site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: clamp(1.4rem, 5vw, 2rem);
+        text-align: center;
+        line-height: 1.25;
+    }
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    section.topo_do_site {
+        padding: 30px 6%;
+    }
+
+    .topo_do_site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo_do_site .flex {
+        gap: 60px;
+    }
+
+    .projeto-card {
+        width: 100%;
+    }
+
+    section.sobre {
+        padding: 60px 4%;
+    }
+
+    .sobre .txt-sobre h2 {
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    section.portfolio {
+        padding: 60px 6%;
+    }
+
+    section.portfolio .flex {
+        gap: 40px;
+    }
+
+    section.formulario {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .dark-toggle-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .dark-toggle-mobile {
+        display: none;
+    }
 }
